@@ -96,14 +96,14 @@ header nav ul li:hover::after{width:100%;}
 #footer{width:100%;  margin:0 auto; }
 #news{text-align: center; position:relative;}
 #newstitle{width:90%;  background-color:rgba(243, 239, 239, 0.7); height:150px; padding:15px; border-radius:20px; left:5%; position:absolute; top:70px;}
-#newstitle h3{font-size: 18px; margin:5px;}
+#newstitle h3{font-size: 20px; margin:5px;}
 #newstitle p{font-size: 15px; margin:5px; color:#474747;}
 #newstitle input{line-height:20px; width:50%; border:none; outline:none; padding:4px; margin:5px;}
 #newstitle input:first-of-type{width:20%;}
 #newstitle button{padding:5px; width:20%; height:25px; border:none; background-color:rgb(148, 146, 146); color:white; border-radius:10px; font-size:11px;}
 
 #address{display:flex; justify-content:center; text-align:center; flex-wrap:wrap;}
-#address img{width:80%;} 
+#address img{width:10%;} 
 .contact{ text-align:center; width:96%; margin:2%;}
 /* .contact img{margin-left:70px;} */
 .contact>h2{color:white; font-size: 15px;}
