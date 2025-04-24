@@ -85,9 +85,9 @@ header nav ul li:hover::after{width:100%;}
     #story article{width:47%; margin:20px 0; }
     #title{margin:0 auto; text-align: center; padding:20px; font-size: 25px;}
 
-#plan{background-color:azure; display:flex; justify-content:space-evenly; width: 96%; margin:2% }
+#plan{background-color:azure; display:flex; justify-content:space-evenly; width: 96%; margin:2%; flex-wrap:wrap;}
 #plan article img{width:100%;}
-#plan article{margin:2%; width:30%}
+#plan article{margin:2%; width:90%}
 #plan article h2{font-size:14px;}
 #plan article p{font-size:13px;}
 #plan article:hover{opacity:0.7;}
