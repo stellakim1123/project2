@@ -16,6 +16,30 @@ header nav ul li a{font-weight:bold; font-size:19px; color:white;}
 header nav ul li::after{content:""; position:absolute; bottom:2%; left:0; width:0%; height:5px; background-color: white; transition:all 0.8s;}
 header nav ul li:hover::after{width:100%;}
 
+#main_info{background-color:rgb(231, 229, 229); width: 100%; padding:4%;}
+#main_info>h1{font-size:50px; margin:0 0 2%;}
+#main_info>p{font-size:18px; color:#666; margin: 0 0 1%;}
+
+#discover{width: 45%; margin:0 auto; border-bottom:6px solid rgb(70, 69, 69);}
+#discover>h2{font-size: 50px; text-align:center; margin: 150px 0 2%; }
+
+#touch{background-color:azure; margin:5%;}
+.c{display:flex; justify-content:space-evenly; flex-wrap: nowrap; margin: 7% 2%;}
+.c img{width:50%;}
+.c #content{width:40%; margin: 10% 5%;}
+.c #content h2{margin: 5% 0 8%; font-size: 30px;}
+.c #content p{font-size: 17px; color:rgb(70, 69, 69);}
+.c #content button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
+
+.d{display:flex; flex-direction: row-reverse; flex-wrap: nowrap; margin: 7% 2%;}
+.d img{width:40%;}
+.d #content{width:40%; margin: 10% 5%;}
+.d #content h2{margin: 5% 0 8%; font-size: 30px;}
+.d #content p{font-size: 17px; color:rgb(70, 69, 69);}
+.d #content button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
+
+
+
 
 #footer{width:100%; margin:0 auto; }
 #news{text-align: center; height:250px;  position:relative;}
