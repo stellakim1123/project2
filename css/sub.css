@@ -1,63 +1,82 @@
-*{margin:0; padding:0; box-sizing:border-box;}
-ul, ol, li{list-style:none;}
-a{text-decoration:none; color:#333;}
 
-#wrap{width:100%; }
-
-#top{width:100%; height:900px; position:relative;}
-header{width:100%; display:flex; justify-content: space-between; position:absolute;   z-index:5; padding:1%;  align-items: center; backdrop-filter: blur(7px);
-}
-#logo{ width:260px;  margin-left:3%;}
-#logo img{width:100%;}
-header nav{width:700px; }
-header nav ul{display:flex; justify-content: space-evenly; line-height:70px;}
-header nav ul li{width:20%; text-align:center; position:relative;}
-header nav ul li a{font-weight:bold; font-size:19px; color:white;}
-header nav ul li::after{content:""; position:absolute; bottom:2%; left:0; width:0%; height:5px; background-color: white; transition:all 0.8s;}
-header nav ul li:hover::after{width:100%;}
+#top{width:100%; height:500px; position:relative;}
+#slider{width:100%; height:100%; background-repeat: no-repeat; background-size:cover; background-position:0 20%; position:relative;}
+#slider>h2{position:absolute; text-align:center; width:100%; margin-top:220px; color:white; font-size:70px;}
 
 #main_info{background-color:rgb(231, 229, 229); width: 100%; padding:4%;}
-#main_info>h1{font-size:50px; margin:0 0 2%;}
-#main_info>p{font-size:18px; color:#666; margin: 0 0 1%;}
+#main_info>h2{font-size:40px; margin:0 0 2%;}
+#main_info>p{font-size:16px; color:#666; margin: 0 0 1%;}
 
-#discover{width: 45%; margin:0 auto; border-bottom:6px solid rgb(70, 69, 69);}
-#discover>h2{font-size: 50px; text-align:center; margin: 150px 0 2%; }
+#discover{ margin:0 auto; border-bottom:7px solid rgb(70, 69, 69); width:80%; }
+#discover>h2{font-size: 33px; text-align:center; margin: 150px 0 2%; }
 
-#touch{background-color:azure; margin:5%;}
+#touch{background-color:azure; margin:5%; width:90%;}
 .c{display:flex; justify-content:space-evenly; flex-wrap: nowrap; margin: 7% 2%;}
 .c img{width:50%;}
+.c img:hover{opacity:0.7;}
 .c #content{width:40%; margin: 10% 5%;}
 .c #content h2{margin: 5% 0 8%; font-size: 30px;}
-.c #content p{font-size: 17px; color:rgb(70, 69, 69);}
+.c #content p{font-size: 16px; color:rgb(70, 69, 69);}
 .c #content button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
+.c #content button:hover{background-color: #666; transition: all 0.5s;}
+.c #content button a:hover{background-color: #666; color:white;}
 
 .d{display:flex; flex-direction: row-reverse; flex-wrap: nowrap; margin: 7% 2%;}
-.d img{width:40%;}
+.d img{width:50%;} 
+.d img:hover{opacity:0.7;}
 .d #content{width:40%; margin: 10% 5%;}
 .d #content h2{margin: 5% 0 8%; font-size: 30px;}
 .d #content p{font-size: 17px; color:rgb(70, 69, 69);}
 .d #content button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
+.d #content button:hover{background-color: #666; transition: all 0.5s;}
+.d #content button a:hover{background-color: #666; color:white;}
+
+#whale{margin:0 auto; width:90%;}
+#whale_title{ margin:0 auto; border-bottom:7px solid rgb(70, 69, 69); width:80%;}
+#whale_title>h2{font-size: 33px; text-align:center; margin: 150px 0 2%; }
+#whale img{width:100%; margin:5% auto;}
+#whale img:hover{opacity:0.7;}
+#whale button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
+#whale button:hover{background-color: #666; transition: all 0.5s;}
+#whale button a:hover{background-color: #666; color:white;}
+
+#inland_adventures{width:80%; margin:0 auto; overflow:hidden;}
+.e{ margin:0 auto; border-bottom:7px solid rgb(70, 69, 69); width:80%;}
+.e>h2{font-size: 33px; text-align:center; margin: 150px 0 2%; }
+
+#slidewrap{width: 500px; height:350px; margin: 50px auto; position:relative; overflow:hidden; }
+#inland_adventures .slide{width:300%;}
+#inland_adventures .slide li{width:33.333%; float:left;}
+
+#inland_adventures img{width:100%;}
+#inland_adventures img:hover{opacity:0.7;}
+.f{background-color:azure; padding:5%; width: 80%;}
+.f>h3{font-size: 20px; color:#272727; width:110px; border-bottom: 3px solid rgb(70, 69, 69); padding:5px;}
+.f>p{font-size: 16px; color:#666;  }
+#inland_adventures>span{font-size: 70px; color:rgb(173, 171, 171); background-color:antiquewhite; padding:8px; border-radius:10px;}
+.prev{left:0}
+.next{right:0;}
+
+.f>button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
+.f>button:hover{background-color: #666; transition: all 0.5s;}
+.f>button a:hover{background-color: #666; color:white;}
 
 
+@media(max-width:830px){
+    #slider>h2{font-size:8.5vw;}
+    #main_info{background-color:rgb(231, 229, 229); width: 100%; padding:10%;}
+    #main_info>h2{font-size:6.5vw; }
+    #discover>h2{font-size: 33px;}
+    .c{display:flex; flex-direction:column; justify-content: space-around; flex-wrap: wrap;}
+    .c #content h2{margin: 4% 0 4%; font-size: 5vw;}
+    .c img{width:100%; margin:0 auto;}
+    .c #content{width:100%; padding:5px; margin:0 auto;}
+    .d{display:flex; flex-direction:column; justify-content: space-around; flex-wrap: wrap;}
+    .d #content h2{margin: 4% 0 4%; font-size: 5vw;}
+    .d img{width:100%; margin:0 auto;}
+    .d #content{width:100%; padding:5px; margin:0 auto;}
+}
 
+@media(min-width:830px) and (max-width:1320px){}
 
-#footer{width:100%; margin:0 auto; }
-#news{text-align: center; height:250px;  position:relative;}
-#newstitle{width:70%;  background-color:rgba(243, 239, 239, 0.7); height:200px; padding:20px; border-radius:30px; left:15%; position:absolute; top:100px;}
-#newstitle h3{font-size: 30px; margin:5px;}
-#newstitle p{font-size: 20px; margin:5px; color:#474747;}
-#newstitle input{line-height:30px; width:40%; border:none; outline:none; padding:5px; margin:15px;}
-#newstitle input:first-of-type{width:20%;}
-#newstitle button{padding:10px; width:130px; height:35px; border:none; background-color:rgb(148, 146, 146); color:white; border-radius:10px;}
-
-#address{display:flex; justify-content:center;}
-#address img{ width:80px; height:80px;} 
-.contact{margin:5%;}
-/* .contact img{margin-left:70px;} */
-.contact>h2{color:white; text-align:center; font-size: 20px;}
-.contact>p{color:white; text-align:center; font-size:15px;}
-
-#footbar{background-color:aliceblue; color:#666; text-align:center; height:30px; line-height:30px;}
-
-.a{display:none; cursor:pointer;}
-.b{display:block;}
+@media(min-width:1320px){}

@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>Adventures in Hawaii</title>
+
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/sub.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
+
 <body>
     <div id="wrap">
         <!-- header -->
         <div id="top">
             <header>
                 <div id="logo">
-                    <img src="img/logo.png" alt="logo">
+                    <a href="index.html"><img src="img/logo.png" alt="logo"></a>
                 </div>
                 <img src="img/i1.png" alt="a" class="a">
                 <nav class="b">
@@ -29,7 +35,7 @@
             </header>
             <div id="slider" style="background-image:url(img/fish.jpg.webp)">
                 <h2>Hawaiian Adventure</h2>
-                <div id="search">
+                <!-- <div id="search">
                     <div id="search_title">Search for your trip</div>
                     <div id="search_content">
                         <input type="text" value="city">
@@ -38,11 +44,11 @@
                         <input type="text" value="Budget">
                         <Button>Search</Button>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div id="main_info">
-            <h1>Adventure paradise</h1>
+            <h2>Adventure paradise</h2>
             <p>Hawaii’s beautiful beaches are just the beginning. From surfing the gentle waves of Waikiki Beach to
                 snorkeling with manta rays on the Kona Coast, every moment in Hawaii is filled with fun. From
                 adrenaline-pumping adventures to activities for the whole family, Hawaii is the place to go for
@@ -55,61 +61,103 @@
             <article class="c">
                 <img src="img/surfing.jpg.webp" alt="surfing">
                 <div id="content">
-                    <h2>Surfing</h2> 
-                    <p>If you dream of carving up waves, there's no better place than Hawaii, the birthplace of surfing.</p>
+                    <h2>Surfing</h2>
+                    <p>If you dream of carving up waves, there's no better place than Hawaii, the birthplace of surfing.
+                    </p>
                     <button><a href="#">Read More</a></button>
                 </div>
             </article>
             <article class="d">
                 <img src="img/snork.jpg.webp" alt="snork">
                 <div id="content">
-                <h2>Snorkeling and scuba diving</h2>
+                    <h2>Snorkeling and scuba diving</h2>
                     <p>Explore Hawaii's underwater world, surrounded by approximately 1,931 km of coral reefs, and come
-                    face-to-face with tropical fish, spotted rays, and green sea turtles.</p>
+                        face-to-face with tropical fish, spotted rays, and green sea turtles.</p>
                     <button><a href="#">Read More</a></button>
                 </div>
             </article>
             <article class="c">
                 <img src="img/mountain.jpg.webp" alt="mountain">
                 <div id="content">
-                <h2>Mountain Tubing</h2>
-                <p>Strap on a headlamp and hop into a tube to explore inland canals, tunnels and flumes on this only-in-Kauai adventure.</p>
-                <button><a href="#">Read More</a></button>
-            </div>
+                    <h2>Mountain Tubing</h2>
+                    <p>Strap on a headlamp and hop into a tube to explore inland canals, tunnels and flumes on this
+                        only-in-Kauai adventure.</p>
+                    <button><a href="#">Read More</a></button>
+                </div>
             </article>
             <article class="d">
                 <img src="img/parasailing.jpg.webp" alt="Parasailing">
                 <div id="content">
-                <h2>Parasailing</h2>
-                <p>Lift off on a parasailing adventure and get a bird’s eye view of Hawaii’s breathtaking coastline from up to 1,200 feet in the air.</p>
-                <button><a href="#">Read More</a></button>
+                    <h2>Parasailing</h2>
+                    <p>Lift off on a parasailing adventure and get a bird’s eye view of Hawaii’s breathtaking coastline
+                        from up to 1,200 feet in the air.</p>
+                    <button><a href="#">Read More</a></button>
                 </div>
             </article>
             <article class="c">
                 <img src="img/fishing.jpg.webp" alt="fishing">
                 <div id="content">
-                <h2>Deep Sea Fishing</h2>
-                <p>Hawaii is home to some of the biggest marlin in the world as well as one of the oldest billfish tournaments, plus scores of other game fish – from wahoo to mahimahi to giant trevally.</p>
-                <button><a href="#">Read More</a></button>
-            </div>
+                    <h2>Deep Sea Fishing</h2>
+                    <p>Hawaii is home to some of the biggest marlin in the world as well as one of the oldest billfish
+                        tournaments, plus scores of other game fish – from wahoo to mahimahi to giant trevally.</p>
+                    <button><a href="#">Read More</a></button>
+                </div>
             </article>
         </section>
-
         <div id="whale">
-            <h2>Whale watching</h2>
+            <div id="whale_title">
+                <h2>Whale watching</h2>
+            </div>
             <img src="img/whale.jpg.webp">
-            <p>During the winter, Hawaii becomes the world's premier whale watching destination, as thousands of kohola(humpback whales) come to feed and raise their young. Take advantage of tours available on every island to see these magnificent creatures up close.y</p>
+            <p>During the winter, Hawaii becomes the world's premier whale watching destination, as thousands of
+                kohola(humpback
+                whales) come to feed and raise their young. Take advantage of tours available on every island to see
+                these
+                magnificent creatures up close.</p>
             <button><a href="#">More</a></button>
         </div>
 
-        <div id="zipline">
-            <h2>Inland Adventures</h2>
-            <img src="img/ziplines.jpg.webp" alt="zipline">
-            <div id="zip_info">
-                <h3>Zipline/h3>
-                    <p>Hop on one of the longest ziplines in the U.S. and fly through Hawaii's lush forests, taking in some of the most beautiful secnery in the world.</p>
+        <div id="inland_adventures">
+            <div class="e">
+                <h2>Inland Adventures</h2>
             </div>
-            <button></button>
+            <div id="slidewrap">
+                <span class="prev">&lt;</span>
+                <ul class="slide">
+                    <li>
+                        <div class="f">
+                            <h3>Zipline</h3>
+                            <p>Hop on one of the longest ziplines in the U.S. and fly through Hawaii's lush forests,
+                                taking
+                                in some of the most beautiful secnery in the world.</p>
+                            <button>See More</button>
+                        </div>
+                        <img src="img/ziplines.jpg.webp" alt="zipline">
+                    </li>
+                    <li>
+                        <div class="f">
+                            <h3>Lapel</h3>
+                            <p>Whhther you're rappelling down jungle cliffs or cascading waterfalls, Hawaii's expert
+                                juides
+                                will show you the ropes.</p>
+                            <button>See More</button>
+                        </div>
+                        <img src="img/rappell.jpg.webp" alt="rapel">
+                    </li>
+                    <li>
+                        <div class="f">
+                            <h3>ATV Tours</h3>
+                            <p>Looking for something a little more adventures? Take an ATV ride to explore rugged
+                                terrain or
+                                hard-to-reach areas of the Hawaiian Islands.</p>
+                            <button>See More</button>
+                        </div>
+                        <img src="img/atv.jpg.webp" alt="atv">
+                    </li>
+                </ul>
+
+                <span class="next">&gt;</span>
+            </div>
         </div>
 
 
@@ -148,4 +196,5 @@
 
     </div>
 </body>
+
 </html>
