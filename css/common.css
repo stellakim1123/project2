@@ -28,6 +28,7 @@ header nav ul li:hover::after{width:100%;}
 #footer{width:100%; margin:0 auto; }
 #news{text-align: center; height:250px;  position:relative;}
 #newstitle{width:70%;  background-color:rgba(243, 239, 239, 0.7); height:200px; padding:20px; border-radius:30px; left:15%; position:absolute; top:100px;}
+
 #newstitle h3{font-size: 30px; margin:5px;}
 #newstitle p{font-size: 20px; margin:5px; color:#474747;}
 #newstitle input{line-height:30px; width:40%; border:none; outline:none; padding:5px; margin:15px;}

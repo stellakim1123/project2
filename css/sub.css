@@ -1,82 +1,197 @@
 
-#top{width:100%; height:500px; position:relative;}
-#slider{width:100%; height:100%; background-repeat: no-repeat; background-size:cover; background-position:0 20%; position:relative;}
-#slider>h2{position:absolute; text-align:center; width:100%; margin-top:220px; color:white; font-size:70px;}
-
-#main_info{background-color:rgb(231, 229, 229); width: 100%; padding:4%;}
-#main_info>h2{font-size:40px; margin:0 0 2%;}
-#main_info>p{font-size:16px; color:#666; margin: 0 0 1%;}
-
-#discover{ margin:0 auto; border-bottom:7px solid rgb(70, 69, 69); width:80%; }
-#discover>h2{font-size: 33px; text-align:center; margin: 150px 0 2%; }
-
-#touch{background-color:azure; margin:5%; width:90%;}
-.c{display:flex; justify-content:space-evenly; flex-wrap: nowrap; margin: 7% 2%;}
-.c img{width:50%;}
-.c img:hover{opacity:0.7;}
-.c #content{width:40%; margin: 10% 5%;}
-.c #content h2{margin: 5% 0 8%; font-size: 30px;}
-.c #content p{font-size: 16px; color:rgb(70, 69, 69);}
-.c #content button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
-.c #content button:hover{background-color: #666; transition: all 0.5s;}
-.c #content button a:hover{background-color: #666; color:white;}
-
-.d{display:flex; flex-direction: row-reverse; flex-wrap: nowrap; margin: 7% 2%;}
-.d img{width:50%;} 
-.d img:hover{opacity:0.7;}
-.d #content{width:40%; margin: 10% 5%;}
-.d #content h2{margin: 5% 0 8%; font-size: 30px;}
-.d #content p{font-size: 17px; color:rgb(70, 69, 69);}
-.d #content button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
-.d #content button:hover{background-color: #666; transition: all 0.5s;}
-.d #content button a:hover{background-color: #666; color:white;}
-
-#whale{margin:0 auto; width:90%;}
-#whale_title{ margin:0 auto; border-bottom:7px solid rgb(70, 69, 69); width:80%;}
-#whale_title>h2{font-size: 33px; text-align:center; margin: 150px 0 2%; }
-#whale img{width:100%; margin:5% auto;}
-#whale img:hover{opacity:0.7;}
-#whale button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
-#whale button:hover{background-color: #666; transition: all 0.5s;}
-#whale button a:hover{background-color: #666; color:white;}
-
-#inland_adventures{width:80%; margin:0 auto; overflow:hidden;}
-.e{ margin:0 auto; border-bottom:7px solid rgb(70, 69, 69); width:80%;}
-.e>h2{font-size: 33px; text-align:center; margin: 150px 0 2%; }
-
-#slidewrap{width: 500px; height:350px; margin: 50px auto; position:relative; overflow:hidden; }
-#inland_adventures .slide{width:300%;}
-#inland_adventures .slide li{width:33.333%; float:left;}
-
-#inland_adventures img{width:100%;}
-#inland_adventures img:hover{opacity:0.7;}
-.f{background-color:azure; padding:5%; width: 80%;}
-.f>h3{font-size: 20px; color:#272727; width:110px; border-bottom: 3px solid rgb(70, 69, 69); padding:5px;}
-.f>p{font-size: 16px; color:#666;  }
-#inland_adventures>span{font-size: 70px; color:rgb(173, 171, 171); background-color:antiquewhite; padding:8px; border-radius:10px;}
-.prev{left:0}
-.next{right:0;}
-
-.f>button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
-.f>button:hover{background-color: #666; transition: all 0.5s;}
-.f>button a:hover{background-color: #666; color:white;}
-
-
 @media(max-width:830px){
-    #slider>h2{font-size:8.5vw;}
+
+    #top{width:100%; height:500px; position:relative;}
+    #slider{width:100%; height:100%; background-repeat: no-repeat; background-size:cover; background-position:0 20%; position:relative;}
+    #slider>h2{position:absolute; text-align:center; width:100%; margin-top:220px; color:white; font-size:8.5vw;}
+
     #main_info{background-color:rgb(231, 229, 229); width: 100%; padding:10%;}
-    #main_info>h2{font-size:6.5vw; }
-    #discover>h2{font-size: 33px;}
+    #main_info>h2{font-size:6.5vw; margin:0 0 2%; width:100%;}
+    #main_info>p{font-size:16px; color:#666; margin: 0 0 1%;}
+
+    #discover{ margin:0 auto; border-bottom:7px solid rgb(70, 69, 69); width:80%; }
+    #discover>h2{font-size: 33px; text-align:center; margin: 150px 0 2%; }
+
+    #touch{background-color:azure; margin:5% auto; width:80%;}
     .c{display:flex; flex-direction:column; justify-content: space-around; flex-wrap: wrap;}
     .c #content h2{margin: 4% 0 4%; font-size: 5vw;}
     .c img{width:100%; margin:0 auto;}
-    .c #content{width:100%; padding:5px; margin:0 auto;}
+    .c #content{width:100%; padding:5px; margin:0 0 7%;}
+    .c #content button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
+    .c #content button:hover{background-color: #666; transition: all 0.5s;}
+    .c #content button a:hover{background-color: #666; color:white;}
+
     .d{display:flex; flex-direction:column; justify-content: space-around; flex-wrap: wrap;}
     .d #content h2{margin: 4% 0 4%; font-size: 5vw;}
-    .d img{width:100%; margin:0 auto;}
-    .d #content{width:100%; padding:5px; margin:0 auto;}
+    .d img{width:100%; margin:5% auto;}
+    .d #content{width:100%; padding:5px; margin:0 0 7%;}
+    .d #content button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
+    .d #content button:hover{background-color: #666; transition: all 0.5s;}
+    .d #content button a:hover{background-color: #666; color:white;}
+
+
+    #whale{margin:0 auto; width:80%; background-color:azure;}
+    #whale_title{ margin:0 auto 5%; border-bottom:7px solid rgb(70, 69, 69); width:80%;}
+    #whale_title>h2{font-size: 33px; text-align:center; margin: 150px 0 2%; }
+    #whale p{padding:1%;}
+    #whale img{width:100%; margin:0 auto 5%;}
+    #whale img:hover{opacity:0.7;}
+    #whale button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
+    #whale button:hover{background-color: #666; transition: all 0.5s;}
+    #whale button a:hover{background-color: #666; color:white;}
+
+    #inland_adventures{width:80%; margin:0 auto; overflow:hidden;}
+    .e{ margin:0 auto; border-bottom:7px solid rgb(70, 69, 69); width:100%;}
+    .e>h2{font-size: 33px; text-align:center; margin: 150px 0 2%; }
+
+    #slidewrap{width: 100%; margin: 50px auto; position:relative; overflow:hidden; }
+    #slidewrap .slide{width:300%;}
+    #slidewrap .slide li{width:33.3333%; float:left;}
+
+    #slidewrap img{width:100%;}
+    #slidewrap img:hover{opacity:0.7;}
+    .f{background-color:azure; padding:3%; width: 100%;}
+    .f>h3{font-size: 20px; color:#272727; width:110px; border-bottom: 3px solid rgb(70, 69, 69); padding:5px;}
+    .f>p{font-size: 16px; color:#666;  }
+    #slidewrap>span{font-size: 70px; color:white;  padding:8px; border-radius:10px; position:absolute; top:55%; cursor:pointer;}
+    #slidewrap>span:hover{color:aquamarine;}
+    .prev{left:0}
+    .next{right:0;}
+    .f button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
+    .f button:hover{background-color: #666; transition: all 0.5s;}
+    .f button a:hover{background-color: #666; color:white;}
 }
 
-@media(min-width:830px) and (max-width:1320px){}
+@media(min-width:830px) and (max-width:1320px){
 
-@media(min-width:1320px){}
+    #top{width:100%; height:500px; position:relative;}
+    #slider{width:100%; height:100%; background-repeat: no-repeat; background-size:cover; background-position:0 20%; position:relative;}
+    #slider>h2{position:absolute; text-align:center; width:100%; margin-top:220px; color:white; font-size:70px;}
+
+    #main_info{background-color:rgb(231, 229, 229); width: 100%; padding:5% 10%;}
+    #main_info>h2{font-size:40px; margin:0 0 2%;}
+    #main_info>p{font-size:16px; color:#666; margin: 0 0 1%;}
+
+    #discover{ margin:0 auto; border-bottom:7px solid rgb(70, 69, 69); width:80%; }
+    #discover>h2{font-size: 33px; text-align:center; margin: 150px 0 2%; }
+
+    #touch{background-color:azure; margin:5%; width:80%; margin:0 auto;}
+    .c{display:flex; justify-content:space-evenly; flex-wrap: nowrap; margin: 7% 2%;}
+    .c img{width:40%;}
+    .c img:hover{opacity:0.7;}
+    .c #content{width:40%; margin: 10% 5%;}
+    .c #content h2{margin: 5% 0 8%; font-size: 30px;}
+    .c #content p{font-size: 16px; color:rgb(70, 69, 69);}
+    .c #content button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
+    .c #content button:hover{background-color: #666; transition: all 0.5s;}
+    .c #content button a:hover{background-color: #666; color:white;}
+
+    .d{display:flex; flex-direction: row-reverse; flex-wrap: nowrap; margin: 5% 2%;}
+    .d img{width:40%;} 
+    .d img:hover{opacity:0.7;}
+    .d #content{width:40%; margin: 10% 5%;}
+    .d #content h2{margin: 5% 0 8%; font-size: 30px;}
+    .d #content p{font-size: 17px; color:rgb(70, 69, 69);}
+    .d #content button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
+    .d #content button:hover{background-color: #666; transition: all 0.5s;}
+    .d #content button a:hover{background-color: #666; color:white;}
+
+    #whale{margin:0 auto; width:80%; background-color:azure;}
+    #whale_title{ margin:0 auto 5%; border-bottom:7px solid rgb(70, 69, 69); width:80%;}
+    #whale_title>h2{font-size: 33px; text-align:center; margin: 150px 0 2%; }
+    #whale img{width:100%; margin:0 auto 3%;}
+    #whale img:hover{opacity:0.7;}
+    #whale p{padding:1%;}
+    #whale button{border:none; padding:4px; margin:25px 1%; border-radius: 5px; font-size:12px;}
+    #whale button:hover{background-color: #666; transition: all 0.5s;}
+    #whale button a:hover{background-color: #666; color:white;}
+
+    #inland_adventures{width:80%; margin:0 auto; overflow:hidden;}
+    .e{ margin:0 auto; border-bottom:7px solid rgb(70, 69, 69); width:100%;}
+    .e>h2{font-size: 33px; text-align:center; margin: 150px 0 2%; }
+
+    #slidewrap{width: 100%; margin: 50px auto; position:relative; overflow:hidden; }
+    #slidewrap .slide{width:300%;}
+    #slidewrap .slide li{width:33.333%; float:left; position:relative;}
+
+    #slidewrap img{width:100%;}
+    #slidewrap img:hover{opacity:0.7;}
+    .f{background-color:azure; padding:2%; width: 30%; position:absolute;  left:67%; top:2%; z-index:1;}
+    .f>h3{font-size: 20px; color:#272727; width:110px; border-bottom: 3px solid rgb(70, 69, 69); padding:5px;}
+    .f>p{font-size: 16px; color:#666;  }
+    #slidewrap>span{font-size: 70px; color:white;  padding:8px; border-radius:10px; position:absolute; top:60%; transform:translateY(-50%);}
+    #slidewrap>span:hover{color:aquamarine;}
+    .prev{left:0}
+    .next{right:0;}
+
+    .f>button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
+    .f>button:hover{background-color: #666; transition: all 0.5s;}
+    .f>button a:hover{background-color: #666; color:white;}
+}
+
+@media(min-width:1320px){
+
+    #top{width:100%; height:500px; position:relative;}
+    #slider{width:100%; height:100%; background-repeat: no-repeat; background-size:cover; background-position:0 20%; position:relative;}
+    #slider>h2{position:absolute; text-align:center; width:100%; margin-top:220px; color:white; font-size:70px;}
+
+    #main_info{background-color:rgb(231, 229, 229);  padding:5% 10%; margin:0 auto;}
+    #main_info>h2{font-size:40px; margin:0 0 2%; width:80%;}
+    #main_info>p{font-size:16px; color:#666; margin: 0 0 1%;}
+
+    #discover{ margin:0 auto; border-bottom:7px solid rgb(70, 69, 69); width:80%; }
+    #discover>h2{font-size: 33px; text-align:center; margin: 150px 0 2%; }
+
+    #touch{background-color:azure; margin:5% auto; width:80%; }
+    .c{display:flex; justify-content:left; flex-wrap: nowrap; margin: 5% 2%;}
+    .c img{width:45%;}
+    .c img:hover{opacity:0.7;}
+    .c #content{width:40%; margin: 10% 5%;}
+    .c #content h2{margin: 5% 0 8%; font-size: 30px;}
+    .c #content p{font-size: 16px; color:rgb(70, 69, 69);}
+    .c #content button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
+    .c #content button:hover{background-color: #666; transition: all 0.5s;}
+    .c #content button a:hover{background-color: #666; color:white;}
+
+    .d{display:flex; flex-direction: row-reverse; justify-content:right; flex-wrap:nowrap; margin: 5% 2%;}
+    .d img{width:45%;} 
+    .d img:hover{opacity:0.7;}
+    .d #content{width:40%; margin: 10% 5%;}
+    .d #content h2{margin: 5% 0 8%; font-size: 30px;}
+    .d #content p{font-size: 17px; color:rgb(70, 69, 69);}
+    .d #content button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
+    .d #content button:hover{background-color: #666; transition: all 0.5s;}
+    .d #content button a:hover{background-color: #666; color:white;}
+
+    #whale{margin:5% auto; width:80%; background-color:azure;}
+    #whale_title{ margin:0 auto; border-bottom:7px solid rgb(70, 69, 69); width:80%;}
+    #whale_title>h2{font-size: 33px; text-align:center; margin: 150px 0 2%; }
+    #whale p{font-size:16px; padding: 1%;}
+    #whale img{width:100%; margin:0 auto 3%;}
+    #whale img:hover{opacity:0.7;}
+    #whale button{border:none; padding:4px; margin:25px 1%; border-radius: 5px; font-size:12px;}
+    #whale button:hover{background-color: #666; transition: all 0.5s;}
+    #whale button a:hover{background-color: #666; color:white;}
+
+    #inland_adventures{width:80%; margin:0 auto; overflow:hidden;}
+    .e{ margin:0 auto; border-bottom:7px solid rgb(70, 69, 69); width:100%;}
+    .e>h2{font-size: 33px; text-align:center; margin: 150px 0 2%; }
+
+    #slidewrap{width: 100%; margin: 50px auto; position:relative; overflow:hidden; }
+    #slidewrap .slide{width:300%;}
+    #slidewrap .slide li{width:33.3333%; float:left; text-align:right; position:relative;}
+
+    #slidewrap img{width:80%; position:relative; z-index:0}
+    #slidewrap img:hover{opacity:0.7;}
+    .f{background-color:azure; padding:2%; width: 25%; position:absolute; z-index:1; top:2%; left:2%;}
+    .f>h3{font-size: 20px; color:#272727; width:110px; border-bottom: 3px solid rgb(70, 69, 69); padding:5px;}
+    .f>p{font-size: 16px; color:#666;  }
+    #slidewrap>span{font-size: 70px; color:rgb(212, 208, 208);  padding:8px; border-radius:10px; position:absolute; top:60%; transform:translateY(-50%);}
+    #slidewrap>span:hover{color:aquamarine;}
+    .prev{left:0}
+    .next{right:0;}
+
+    .f>button{border:none; padding:4px; margin:25px 0; border-radius: 5px; font-size:12px;}
+    .f>button:hover{background-color: #666; transition: all 0.5s;}
+    .f>button a:hover{background-color: #666; color:white;}
+}
